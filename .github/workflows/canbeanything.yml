@@ -1,0 +1,9 @@
+name: Github Actions Demo
+on: [push]
+jobs:
+   Explore-Github-Actions:
+     runs-on: ubuntu-lastest
+     steps:
+       - run : echo "YOU ARE AWESOME! 🫶 "
+       - uses: actions/checkout@v3
+       - run: npm ci
